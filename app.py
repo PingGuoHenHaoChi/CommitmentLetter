@@ -149,7 +149,7 @@ if shared_pdf:
 col_left, col_right = st.columns([1.2, 1])
 
 with col_left:
-    st.subheader("预览")
+    st.subheader("请下滑至底部签名")
     preview_pdf = st.session_state.get("signed_pdf", original_pdf)
     pdf_viewer(preview_pdf, zoom=2.0)
 
